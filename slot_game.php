@@ -25,6 +25,7 @@
         $total_winnings += $payout; // add payout to total winnings
 
         $spins += 1;
+        
     } // end of while loop
 
     echo("Simulation finished, echoing results shortly.\n\n"); // Checkpoint echo statement
