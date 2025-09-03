@@ -33,6 +33,7 @@
         print($result); // print logged results
         
     } // end foreach loop
+    
     print("Total Winnings: {$total_winnings} dollars.\n");
 
 ?>
