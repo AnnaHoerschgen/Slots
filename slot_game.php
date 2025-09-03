@@ -24,6 +24,7 @@
         $total_results[$spins] = "Spin {$spins}: {$result}, Payoff {$payout}.\n"; // Log spin result
         $total_winnings += $payout; // add payout to total winnings
 
+        $spins += 1;
     } // end of while loop
 
     echo("Simulation finished, echoing results shortly.\n\n"); // Checkpoint echo statement
