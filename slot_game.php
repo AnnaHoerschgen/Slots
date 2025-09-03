@@ -1,15 +1,15 @@
 <?php
     $symbols = ["A", "B", "C"]; // Slot symbols
-    $total_results = ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ]; // Overall slot results
+    $total_results = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ]; // Overall slot results
 
     $spins = 0; // # of spins
     $total_winnings = 0; // Total winnings
 
-    print("Running Chance Slots Simulation Version 7.77...\n"); // Initial Print Statement
+    echo("Running Chance Slots Simulation Version 7.77...\n"); // Initial Echo Statement
 
     // Main Game
     while ($spins < 20 || $total_winnings < 500) {
-        $result = ''; // Blank result
+        $result = ""; // Blank result
         for ($i = 0; $i <= 3; $i++) {
             $result += array_rand($symbols);
         } // end of for loop
@@ -26,14 +26,14 @@
 
     } // end of while loop
 
-    print("Simulation finished, printing results shortly.\n\n"); // Checkpoint print statement
+    echo("Simulation finished, echoing results shortly.\n\n"); // Checkpoint echo statement
 
     // Results screen
     foreach ($total_results as $result) {
-        print($result); // print logged results
+        echo($result); // echo logged results
         
     } // end foreach loop
     
-    print("Total Winnings: {$total_winnings} dollars.\n");
+    echo("Total Winnings: {$total_winnings} dollars.\n");
 
 ?>
