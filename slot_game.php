@@ -16,7 +16,7 @@
 
         $payout = match("{$result[0]}{$result[1]}{$result[2]}") {
             "AAA", "BBB", "CCC" => 100, // Three identical symbols
-            "AAB", "ABA", "BAA", "ABB", "BBA", "BAB", "BCC", "CBC", "CCB", "ACC", "CAC", "CCA" => 50, // Two identical symbols
+            "AAB", "ABA", "BAA", "ABB", "BBA", "BAB", "BCC", "CBC", "CCB", "ACC", "CAA", "CAC", "CCA" => 50, // Two identical symbols
             default => 0 // Default case
         }; // end match
 
